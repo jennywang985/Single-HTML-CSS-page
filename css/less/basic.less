@@ -1,0 +1,52 @@
+/*basic*/ 
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@font-family: 'Raleway', sans-serif;
+
+*{
+	margin:0;
+	padding:0;
+}
+html, body{
+  font-size: 100%;
+	background:	#fff;
+	font-family: @font-family, Arial;
+	a{text-decoration:none;}
+	a:hover{
+		text-decoration:none;
+	}
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: @font-family;
+	margin:0;
+}
+
+p,ul,li a{
+	margin:0;
+	padding:0;
+}
+
+
+@media screen and (min-width: 960px) and (max-width: 1199px) {
+	html, body{
+		font-size: 95%;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	body{
+		font-size: 90%;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	body{
+		font-size: 85%;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	body{
+		font-size: 80%;
+	}
+}

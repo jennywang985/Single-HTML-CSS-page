@@ -1,0 +1,102 @@
+/*-- header --*/
+@font-size:1em;
+@white:#fff;
+
+.header-top{
+	background-color:#000;
+	padding:0.5em 0;
+}
+.header-grid-left{
+	float:left;
+	position: relative;
+	left:38%;
+  p{
+	  font-size:@font-size;
+		color:@white;
+		font-weight: bold;
+		span{
+			color: #FF0000;
+		}
+  }
+}
+.header-grid-right{
+	float:right;
+	li{
+		display: inline-block;
+		a{
+			color:#fff;
+			padding: 0 0.5em!important;
+		}
+		:hover{
+			color:#166BA7;
+		}
+	}
+}
+
+.header-bottom{
+	padding:0.5em 0;
+}
+.logo-nav-left{
+	float:left;
+	a{
+		color:#000;
+		font-weight: bold;
+		font-size: @font-size*1.2;
+		span{
+			display: block;
+			text-align: left;
+		}
+	}
+}
+.logo-nav-right{
+	float:right;
+	.navbar-default{
+		margin-bottom:0;
+		background-color: transparent;
+		border: none;
+		.collapse{
+			a{
+				color:#000;
+				font-weight: bold;
+			}
+			:hover{
+				color: #FF0000;
+			}
+		}
+	}
+}
+
+/*********@media**********/
+@media screen and (min-width: 960px) and (max-width: 1199px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	.header-grid-left{
+		left:34%;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	.header-grid-left{
+		left:32%;
+	}
+	.header-grid-right{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	.header-grid-left{
+		left:25%;
+	}
+	.header-grid-right{
+		display: none;
+	}
+}
+
+
+
+
+
+
